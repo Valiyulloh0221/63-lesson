@@ -1,0 +1,34 @@
+.quality{
+  padding-top: 90px;
+  padding-left: 8%;
+  padding-right: 8%;
+  h2{
+    padding-bottom: 32px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #2C2D2E;
+    span{
+      color: #EF7C00;
+    }
+  }
+  &-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 1305px){
+  .quality{
+    max-width: 100%;
+    &-images{
+      gap: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
