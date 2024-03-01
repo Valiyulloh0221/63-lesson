@@ -1,11 +1,12 @@
 import './Header.scss';
+import '../../App';
 
 function Header() {
   return (
-    <header>
-      <div className='container'>
-        <nav className='nav'>
-          <a href="#"><img src="/images/logo.png" alt="" /></a>
+    <>
+      <header>
+        <nav>
+          <a href="#"><img src="/images/logo.png" alt="logo" /></a>
           <div className='nav-items'>
             <button className='nav-item'>Продукция</button>
             <button className='nav-item btn-logo'>Сертификаты</button>
@@ -14,12 +15,12 @@ function Header() {
             <button className='nav-item btn-logo'>Новости</button>
             <button className='nav-item btn-logo'>Вакансии</button>
             <button className='nav-item btn-logo'>Контакты</button>
-            <button><img src="/images/dark.svg" alt="" /></button>
+            <button className='btn-til'><span>RU</span> | EN</button>
           </div>
         </nav>
-      </div>
-    </header>
-  )
+      </header>
+    </>
+  );
 }
 
 export default Header;
